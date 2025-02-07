@@ -1,0 +1,355 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.titel{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+.container{
+    margin: auto;
+    padding: 100px 0;
+    max-width:800px;
+}
+.menu{
+    background-color: black;
+    height: 60px;
+    padding: 8px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+
+}
+.menu-links{
+    float: right;
+}
+.menu-links a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin-left: 10px;
+    line-height: 45px;
+}
+.menu-links a:hover{
+    color: orange;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+.header{
+    width:100% ;
+    height: 100vh;
+    background: linear-gradient( #DB7E7E , #FFC997);
+    position: relative;
+    overflow: hidden;
+}
+.header-kontent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+.header-kontent h1{
+    font-size: 70px;
+    color: white;
+    width: 700px;
+    text-shadow: 10px 10px 3px red;
+}
+.header-kontent a{
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin-top: 25px;
+    display: inline-block;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 10px 10px 5px orange;
+}
+.cirk1{
+    position: absolute;
+    width: 25%;
+    top: 0px;
+    left: 0%;
+}
+.circle2{
+    position: absolute;
+    top: 0px;
+    right:0px;
+    width: 10%;
+}
+.circle3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    width: 20%;
+}
+.circle-bordered{
+    position: absolute;
+    bottom: 0%;
+    left: 200px;
+}
+.circle-dashed-border{
+    position: absolute;
+    bottom: 0px;
+    right: -100px;
+    width: 300px;
+    animation: roteut 10s linear infinite;
+}   
+.triangle{
+    position: absolute;
+    top: 150px;
+    left: 400px;
+    animation: tree 10s linear infinite;
+}
+.octagon{
+    position: absolute;
+    bottom: 70px;
+    left: 600px;
+}
+
+
+
+
+
+
+
+.do{
+    background: linear-gradient(7deg, #DB7E7E 18.07%, #FFC997 70%, #FFFFFF 70%); 
+}
+.do-levt{
+display: inline-block;
+width: 49%;
+vertical-align: top;
+}
+.do-rijd img{
+width: 100%;
+}
+.do-rijd{
+display: inline-block;
+width: 49%;
+}
+.do-levt p{
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgb(244, 76, 76);
+}
+
+
+
+
+
+
+.service{
+    background: linear-gradient(340.62deg, #FFFFFF 45.63%, #DB7F7E 45.64%);
+    text-align: center;
+}
+.service-card{
+    width: 30%;
+    display: inline-block;
+    background-color: #ff7247;
+    border-radius: 20px;
+    padding: 20px;
+    text-shadow: 10px;
+}
+.service h3{
+    margin-top: 20px;
+}
+.service p{
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.good{
+    position: relative;
+}
+.good-card{
+color: white;
+background-color: rgb(228, 66, 38);
+border-radius: 20px;
+margin: 30px auto;
+width: 45%;
+padding:  30px ;
+box-shadow: 10px 10px 5px orange;
+}
+.gc1{
+    position: relative;
+    left: -150px;
+}
+.gc2{
+    position: relative;
+    right: -100px;
+}
+.gc3{
+    position: relative;
+    left: -50px;
+}
+.good-kryg{
+    position: absolute;
+    right:0px ;
+    bottom: 0px;
+    width: 40%;
+    z-index: -1;
+
+}
+
+
+
+
+
+.work-card{
+    background-color: #ff3c00;
+    height: 209px;
+    width: 49%;
+    display: inline-block;
+    border-radius: 20px;
+    border: 2px solid black;
+    opacity: 0.9;
+}
+.work-card:hover{
+    transform: scale(1.05);
+    opacity: 1px;
+}
+
+.w1{
+    background :url(img/portfolio/site1.png)center/cover no-repeat;
+}
+.w2{
+    background :url(img/portfolio/site2.png)center/cover no-repeat;
+}
+.w3{
+    background :url(img/portfolio/site3.png)center/cover no-repeat;
+}
+.w4{
+    background :url(img/portfolio/site4.png)center/cover no-repeat;
+}
+
+
+
+
+
+
+
+.write{
+    background: linear-gradient( #DB7E7E , #FFC997);
+    padding:30px;
+    text-align: center;
+}
+.write a{
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin-top: 25px;
+    display: inline-block;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 10px 10px 5px orange;
+}
+
+
+
+
+
+
+
+
+
+@keyframes roteut {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes tree {
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(-100px,0);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+@media(max-width:950px){
+    .octagon{
+        display: none;
+    }
+    .circle-dashed-border{
+        display: none;
+    }
+    .triangle{
+        display: none;
+    }
+}
+@media(max-width:800px){
+    .about p{
+        padding: 20px;
+    }
+    .do-levt{
+        display: block;
+        width: 70%;
+        margin: auto;
+    }
+    .do-rijd{
+        display: block;
+        width: 70%;
+        margin: auto;
+    }
+    .service-card{
+        display: block;
+width: 50%;
+margin:10px auto;
+    }
+    .gc1{
+        left:0px;
+    }
+    .gc2{
+        right: 0%;
+    }
+    .gc3{
+        left:0px;
+    }
+}
+@media(max-width:500px){
+    .menu{
+        height:fit-content;
+    }
+    .header-kontent h1{
+        width: 400px;
+    }
+    .service img{
+        width: 80%;
+    
+    }
+    .good-card{
+        width: 70%;
+    }
+    .work-card{
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+    }
+}
